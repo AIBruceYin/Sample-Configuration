@@ -1,8 +1,8 @@
 FROM ubuntu:18.04
 USER 0
 
-RUN sudo apt-get update
-RUN sudo apt-get install -y python3-pip
+RUN apt-get update
+RUN apt-get install -y python3-pip
 WORKDIR /app
 
 COPY . .
